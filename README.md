@@ -6,7 +6,7 @@ A starter repository for building **LinkVault**, a bookmark and collection manag
 
 ## 🎨 Figma Design
 
-- **Figma File:** [LinkVault Figma Design](https://www.figma.com/design/YOUR_FIGMA_FILE_ID) *(replace with your Figma link)*
+- **Figma File:** [LinkVault Figma Design](https://www.figma.com/design/s2rHdDGdqAtgBEyA3VR2G6/Untitled?node-id=0-1&t=dKUZ5uh8ycpnMFBO-1)
 
 ---
 
@@ -14,7 +14,7 @@ A starter repository for building **LinkVault**, a bookmark and collection manag
 
 1. **Clone the repository:**
    ```bash
-   git clone <YOUR_REPO_URL>
+   git clone https://github.com/daniel-d7a/linkvault-starter.git
    cd linkvault-starter
    ```
 2. **Run the project:**
