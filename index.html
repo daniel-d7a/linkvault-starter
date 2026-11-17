@@ -25,11 +25,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class',
+        darkMode: "class",
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'system-ui', 'sans-serif'],
+              sans: ["Inter", "system-ui", "sans-serif"],
             },
           },
         },
@@ -39,19 +39,427 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body class="bg-white text-slate-900 font-sans antialiased dark:bg-slate-950 dark:text-slate-100">
-    <div id="app" class="min-h-screen flex items-center justify-center p-6">
-      <div class="max-w-md w-full rounded-xl border border-slate-200 p-6 text-center dark:border-slate-800">
-        <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-lg bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
-          <i class="fa-solid fa-bookmark"></i>
+  <body>
+    <main>
+      <div class="flex justify-between items-center">
+        <div>
+          <h1
+            class="text-[20px] font-[600] tracking-[-0.5px] line-height:[16px] text-[#0F172B]"
+          >
+            All Bookmarks
+          </h1>
+          <span class="text-[12px] text-[#62748E] line-height:[16px]"
+            >7 bookmarks</span
+          >
         </div>
-        <h1 class="text-xl font-semibold tracking-tight">LinkVault Starter</h1>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          Tailwind CSS, Font Awesome, Google Fonts (Inter), and <code class="text-xs">localStorage</code> are ready.
-        </p>
+        <div>
+          <button
+            class="py-[5.75px] px-[11.75px] flex items-center gap-[5.99px] rounded-[8px] text-[12px] text-[#314158] border shadow"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open All
+          </button>
+        </div>
       </div>
-    </div>
+      <!-- cards section -->
+      <section
+        class="grid grid-cols-1 gap-[18px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[21px]"
+      >
+        <!-- card -->
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="border overflow-hidden rounded-[12px]">
+          <img src="./images/hero-section-blog.png" alt="react" />
+          <div class="p-4">
+            <div class="flex justify-between mb-[10px] mt-[18px] items-center">
+              <a href="" class="text-[12px] line-height:[16px] text-[#62748E]"
+                ><i class="fa-solid fa-globe"></i> react.dev
+              </a>
+              <span
+                class="text-[11px] line-height:[16.5px] text-[#45556C] font-[500] py-[2px] px-[8px] rounded-[25276400px] bg-[#F1F5F9]"
+                >Frontend & React</span
+              >
+            </div>
+            <div class="flex flex-col gap-[6px]">
+              <p
+                class="text-[14px] line-height-[19.25px] font-[600] text-[#0F172B]"
+              >
+                React – The Library for Web and Native User Interface.
+              </p>
+              <p
+                class="text-[12px] line-height-[19.25px] font-[400] text-[#62748E] border-b pb-[12px]"
+              >
+                React lets you build user interfaces out of individual pieces
+                called components.
+              </p>
+            </div>
+            <div class="flex items-center justify-end pt-[10.75px] gap-[4px]">
+              <span
+                class="text-[#FFB900] cursor-pointer hover:bg-[#FFFBEB] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-solid fa-star"></i
+              ></span>
+              <!-- Logic favourite icon -->
+              <span
+                class="bg-[#FFFBEB] cursor-pointer hidden text-[#FFB900] w-[28px] text-center rounded-[6px]"
+              >
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <!-- end of Logic favourite icon -->
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-pen"></i
+              ></span>
+              <span
+                class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
+                ><i class="fa-solid fa-trash-can"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <script defer src="./js/db.js"></script>
+    <script defer src="./js/db.js" type="module"></script>
   </body>
 </html>
