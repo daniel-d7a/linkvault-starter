@@ -29,7 +29,7 @@ A starter repository for building **LinkVault**, a bookmark and collection manag
 - **Tailwind CSS (CDN):** Configured in `index.html` with `darkMode: 'class'` and `Inter` font.
 - **Font Awesome 6 (CDN):** Ready to use with `<i class="fa-solid fa-bookmark"></i>`, etc.
 - **Google Fonts:** `Inter` (`400`, `500`, `600`, `700`) imported in `index.html`.
-- **Storage:** Browser `localStorage` (seeded automatically from `js/db.js` / `db.json` structure).
+- **Storage:** Browser `localStorage` (initial mock data provided in `js/db.js` / `db.json`).
 
 ---
 
@@ -42,30 +42,22 @@ linkvault-starter/
 ├── styles/
 │   └── main.css        # Custom CSS
 └── js/
-    ├── db.js           # localStorage helpers (getDB, saveDB, resetDB) + mock seed data
-    └── app.js          # Application entry point
+    └── db.js           # Initial mock data (INITIAL_DB) for seeding localStorage
 ```
 
 ---
 
 ## 💾 Data & `localStorage`
 
-On first load, `getDB()` in `js/db.js` automatically seeds `localStorage` under the key `linkvault_db` using the mock data (same structure as `db.json`):
-
-```js
-const db = getDB();      // Read { collections, bookmarks } from localStorage
-saveDB(db);              // Save updated { collections, bookmarks } to localStorage
-resetDB();               // Reset back to initial mock data
-```
+Use `INITIAL_DB` from `js/db.js` (same structure as `db.json`) to seed `localStorage` on first load, and read/write your collections and bookmarks from `localStorage`.
 
 ---
 
 ## 🔔 Toast Notifications (Recommended)
 
-Use a lightweight toast library via CDN for feedback (e.g., bookmark added, deleted, copied):
+Use **Toastify JS** via CDN for feedback (e.g., bookmark added, deleted, copied):
 
 - **Toastify JS:** [Docs & Demo](https://apvarun.github.io/toastify-js/) | [jsDelivr CDN](https://www.jsdelivr.com/package/npm/toastify-js)
-- **SweetAlert2 (Toasts & Confirm Modals):** [sweetalert2.github.io](https://sweetalert2.github.io/)
 
 ### Quick Toastify JS Example
 

@@ -1,8 +1,3 @@
-const STORAGE_KEY = 'linkvault_db';
-
-/**
- * Initial mock data (mirrors db.json) used to seed localStorage on first load.
- */
 const INITIAL_DB = {
   collections: [
     { id: 'col-all', name: 'All Bookmarks', isSystem: true },
@@ -98,35 +93,3 @@ const INITIAL_DB = {
     },
   ],
 };
-
-/**
- * Reads the database from localStorage, seeding it with INITIAL_DB if empty.
- */
-function getDB() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw) {
-    saveDB(INITIAL_DB);
-    return structuredClone(INITIAL_DB);
-  }
-  try {
-    return JSON.parse(raw);
-  } catch {
-    saveDB(INITIAL_DB);
-    return structuredClone(INITIAL_DB);
-  }
-}
-
-/**
- * Persists the database object to localStorage.
- */
-function saveDB(db) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
-}
-
-/**
- * Resets localStorage back to INITIAL_DB.
- */
-function resetDB() {
-  saveDB(INITIAL_DB);
-  return structuredClone(INITIAL_DB);
-}
