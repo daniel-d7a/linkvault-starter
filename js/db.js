@@ -37,7 +37,7 @@ const INITIAL_DB = {
       domain: 'vite.dev',
       title: 'Vite | Next Generation Frontend Tooling',
       description: 'Instant server start, lightning fast HMR, and rich features for modern web projects.',
-      image: 'https://vite.dev/og-image.png',
+      image: '',
       collectionId: 'col-dev',
       notes: 'Check plugin ecosystem and env variable conventions.',
       isFavorite: false,
