@@ -35,250 +35,347 @@
         },
       };
     </script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
+
   <body>
-    <div class="py-3 px-6 flex justify-between items-center">
-      <div
-        class="flex items-center gap-2 rounded-[8px] border border-[#E2E8F0] pt-[7.75px] pr-[31.75px] pb-[8.9px] pl-[12px] bg-[#F8FAFCB2]"
-      >
-        <img src="./assets/SVG.png" alt="search Icon" />
-        <input
-          type="text"
-          placeholder="Search titles, URLs, notes..."
-          class="outline-none search-input"
-        />
+    <aside class="w-[225px] border-r border-[#e2e8f0]">
+      <!-- Logo -->
+      <div class="flex items-center gap-[10px] px-[16px] py-[11.62px]">
+        <i
+          class="fa-regular fa-bookmark bg-[#0F172B] w-[31.99px] h-[31.99px] rounded-[8px] text-white flex items-center justify-center"
+        ></i>
+        <h1 class="font-[600] text-[16px] text-[#0F172B] leading-[24px]">
+          LinkVault
+        </h1>
       </div>
-      <button
-        class="border border-black bg-black text-white py-2 px-4 rounded-lg"
-        onclick="my_modal_3.showModal()"
-      >
-        Add
-      </button>
-    </div>
 
-    <main>
-      <div class="flex justify-between items-center">
-        <div>
-          <h1
-            class="text-[20px] font-[600] tracking-[-0.5px] line-height:[16px] text-[#0F172B]"
-          >
-            All Bookmarks
-          </h1>
-          <span class="text-[12px] text-[#62748E] line-height:[16px]"
-            >7 bookmarks</span
+      <hr class="mt-[12px] border-b border-[#e2e8f0]" />
+
+      <!-- Smart Views -->
+      <div class="pt-[16px] px-[12px]">
+        <h2
+          class="font-semibold text-[12px] leading-[16px] tracking-[0.6px] text-[#90A1B9]"
+        >
+          SMART VIEWS
+        </h2>
+        <div class="flex px-[10px] py-[8px] justify-start items-center">
+          <i
+            class="fa-regular fa-bookmark size-[12px] text-[#62748E] mr-[10px]"
+          ></i>
+          <a
+            href="#"
+            class="font-medium text-[14px] leading-[12px] text-[#45556C]"
+            >All Bookmarks</a
           >
         </div>
-        <div>
-          <button
-            class="py-[5.75px] px-[11.75px] flex items-center gap-[5.99px] rounded-[8px] text-[12px] text-[#314158] border shadow"
+        <div class="flex px-[10px] py-[8px] justify-start items-center">
+          <i
+            class="fa-regular fa-star size-[12px] text-[#62748E] mt-[-4px] mr-[13px] ml-[-3px]"
+          ></i>
+          <a
+            href="#"
+            class="font-medium text-[14px] leading-[12px] text-[#45556C]"
+            >Favorites</a
           >
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open All
-          </button>
         </div>
       </div>
-      <!-- cards section -->
-      <section
-        class="card grid grid-cols-1 gap-[18px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[21px]"
-      >
-        <!-- card -->
-      </section>
-    </main>
 
-    <div class="">
-      <dialog id="my_modal_3" class="modal py-4 px-5 rounded-xl w-[510px]">
-        <div class="modal-box">
-          <form method="dialog">
-            <button
-              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-            >
-              ✕
-            </button>
-          </form>
-          <h1 class="text-lg font-bold">Add Bookmark</h1>
+      <!-- COLLECTIONS -->
+      <div class="pt-[16px] px-[12px]">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-[12px] text-[#90A1BA] font-semibold leading-[16px] tracking-[0.6px]"
+          >
+            COLLECTIONS
+          </h2>
+          <button class="text-[12px] text-[#45556C]">+New</button>
         </div>
-        <div class="flex flex-col gap-4">
+
+        <div class="flex items-center justify-between mb-[5px] mt-[10px]">
+          <div class="flex items-center gap-[10px]">
+            <i
+              class="fa-regular fa-folder w-[13.33px] h-[11.33] text-[#90A1B9]"
+            ></i>
+            <p class="text-[14px] font-medium text-[#45556C] leading-[20px]">
+              Front & React
+            </p>
+          </div>
+          <p
+            class="w-[22.92px] h-[20px] py-[2px] px-[8px] rounded-[8px] bg-[#E2E8F0]"
+          ></p>
+        </div>
+        <div class="flex items-center justify-between mb-[5px] mt-[10px]">
+          <div class="flex items-center gap-[10px]">
+            <i
+              class="fa-regular fa-folder w-[13.33px] h-[11.33] text-[#90A1B9]"
+            ></i>
+            <p class="text-[14px] font-medium text-[#45556C] leading-[20px]">
+              Front & React
+            </p>
+          </div>
+          <p
+            class="w-[22.92px] h-[20px] py-[2px] px-[8px] rounded-[8px] bg-[#E2E8F0]"
+          ></p>
+        </div>
+        <div class="flex items-center justify-between mb-[5px] mt-[10px]">
+          <div class="flex items-center gap-[10px]">
+            <i
+              class="fa-regular fa-folder w-[13.33px] h-[11.33] text-[#90A1B9]"
+            ></i>
+            <p class="text-[14px] font-medium text-[#45556C] leading-[20px]">
+              Front & React
+            </p>
+          </div>
+          <p
+            class="w-[22.92px] h-[20px] py-[2px] px-[8px] rounded-[8px] bg-[#E2E8F0]"
+          ></p>
+        </div>
+      </div>
+    </aside>
+    <div class="content">
+      <div class="py-3 px-6 flex justify-between items-center">
+        <div
+          class="flex items-center gap-2 rounded-[8px] border border-[#E2E8F0] pt-[7.75px] pr-[31.75px] pb-[8.9px] pl-[12px] bg-[#F8FAFCB2]"
+        >
+          <img src="./assets/SVG.png" alt="search Icon" />
+          <input
+            type="text"
+            placeholder="Search titles, URLs, notes..."
+            class="outline-none search-input"
+          />
+        </div>
+        <button
+          class="border border-black bg-black text-white py-2 px-4 rounded-lg"
+          onclick="my_modal_3.showModal()"
+        >
+          Add
+        </button>
+      </div>
+
+      <main>
+        <div class="flex justify-between items-center">
           <div>
-            <label for="">URL</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="https://example.com/article"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
+            <h1
+              class="text-[20px] font-[600] tracking-[-0.5px] line-height:[16px] text-[#0F172B]"
+            >
+              All Bookmarks
+            </h1>
+            <span class="text-[12px] text-[#62748E] line-height:[16px]"
+              >7 bookmarks</span
+            >
+          </div>
+          <div>
+            <button
+              class="py-[5.75px] px-[11.75px] flex items-center gap-[5.99px] rounded-[8px] text-[12px] text-[#314158] border shadow"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open All
+            </button>
+          </div>
+        </div>
+        <!-- cards section -->
+        <section
+          class="card grid grid-cols-1 gap-[18px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[21px]"
+        >
+          <!-- card -->
+        </section>
+      </main>
+
+      <div class="">
+        <dialog id="my_modal_3" class="modal py-4 px-5 rounded-xl w-[510px]">
+          <div class="modal-box">
+            <form method="dialog">
               <button
-                class="border bg-[#e2e9f0] rounded-lg p-2 flex gap-1 items-center"
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               >
-                <img src="./asssets/SVG.svg" width="14px" alt="" />Fetch Preview
+                ✕
+              </button>
+            </form>
+            <h1 class="text-lg font-bold">Add Bookmark</h1>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div>
+              <label for="">URL</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="https://example.com/article"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+                <button
+                  class="border bg-[#e2e9f0] rounded-lg p-2 flex gap-1 items-center"
+                >
+                  <img src="./asssets/SVG.svg" width="14px" alt="" />Fetch
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div>
+              <label for="">Title</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Page title"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Discription</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Short Summary"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Cover Image URL</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="https://example.com/og-image.png"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Collection</label>
+              <div class="flex gap-1">
+                <select
+                  name=""
+                  id=""
+                  class="flex-1 border border-black py-2 px-4 rounded-lg"
+                >
+                  <option value="">No Collection</option>
+                  <option value="">frontend and react</option>
+                  <option value="">ai and tools</option>
+                  <option value="">reading list</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="">Notes</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Personal notes or key takeaways..."
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div class="ml-auto">
+              <button class="border border-[#e2e9f0] py-2 px-4 rounded-lg">
+                Cancel
+              </button>
+              <button
+                class="border border-black bg-black text-white py-2 px-4 rounded-lg"
+              >
+                Save Bookmark
               </button>
             </div>
           </div>
-          <div>
-            <label for="">Title</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Page title"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Discription</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Short Summary"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Cover Image URL</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="https://example.com/og-image.png"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Collection</label>
-            <div class="flex gap-1">
-              <select
-                name=""
-                id=""
-                class="flex-1 border border-black py-2 px-4 rounded-lg"
-              >
-                <option value="">No Collection</option>
-                <option value="">frontend and react</option>
-                <option value="">ai and tools</option>
-                <option value="">reading list</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="">Notes</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Personal notes or key takeaways..."
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div class="ml-auto">
-            <button class="border border-[#e2e9f0] py-2 px-4 rounded-lg">
-              Cancel
-            </button>
-            <button
-              class="border border-black bg-black text-white py-2 px-4 rounded-lg"
-            >
-              Save Bookmark
-            </button>
-          </div>
-        </div>
-      </dialog>
-    </div>
+        </dialog>
+      </div>
 
-    <div class="">
-      <dialog id="my_modal_edit" class="modal py-4 px-5 rounded-xl w-">
-        <div class="modal-box">
-          <form method="dialog">
-            <button
-              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-            >
-              ✕
-            </button>
-          </form>
-          <h1 class="text-lg font-bold">Add Bookmark</h1>
-        </div>
-        <div class="flex flex-col gap-4">
-          <div>
-            <label for="">URL</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="https://example.com/article"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
+      <div class="">
+        <dialog id="my_modal_edit" class="modal py-4 px-5 rounded-xl w-">
+          <div class="modal-box">
+            <form method="dialog">
               <button
-                class="border bg-[#e2e9f0] rounded-lg p-2 flex gap-1 items-center"
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               >
-                <img src="./asssets/SVG.svg" width="14px" alt="" />Fetch Preview
+                ✕
+              </button>
+            </form>
+            <h1 class="text-lg font-bold">Add Bookmark</h1>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div>
+              <label for="">URL</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="https://example.com/article"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+                <button
+                  class="border bg-[#e2e9f0] rounded-lg p-2 flex gap-1 items-center"
+                >
+                  <img src="./asssets/SVG.svg" width="14px" alt="" />Fetch
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div>
+              <label for="">Title</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Page title"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Discription</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Short Summary"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Cover Image URL</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="https://example.com/og-image.png"
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="">Collection</label>
+              <div class="flex gap-1">
+                <select
+                  name=""
+                  id=""
+                  class="flex-1 border border-black py-2 px-4 rounded-lg"
+                >
+                  <option value="">No Collection</option>
+                  <option value="">frontend and react</option>
+                  <option value="">ai and tools</option>
+                  <option value="">reading list</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="">Notes</label>
+              <div class="flex gap-1">
+                <input
+                  placeholder="Personal notes or key takeaways..."
+                  type="text"
+                  class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
+                />
+              </div>
+            </div>
+            <div class="ml-auto">
+              <button class="border border-[#e2e9f0] py-2 px-4 rounded-lg">
+                Cancel
+              </button>
+              <button
+                class="border border-black bg-black text-white py-2 px-4 rounded-lg"
+              >
+                Save Bookmark
               </button>
             </div>
           </div>
-          <div>
-            <label for="">Title</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Page title"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Discription</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Short Summary"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Cover Image URL</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="https://example.com/og-image.png"
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="">Collection</label>
-            <div class="flex gap-1">
-              <select
-                name=""
-                id=""
-                class="flex-1 border border-black py-2 px-4 rounded-lg"
-              >
-                <option value="">No Collection</option>
-                <option value="">frontend and react</option>
-                <option value="">ai and tools</option>
-                <option value="">reading list</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="">Notes</label>
-            <div class="flex gap-1">
-              <input
-                placeholder="Personal notes or key takeaways..."
-                type="text"
-                class="border-2 border-[#e2e9f0] rounded-lg py-3 px-8 flex-1"
-              />
-            </div>
-          </div>
-          <div class="ml-auto">
-            <button class="border border-[#e2e9f0] py-2 px-4 rounded-lg">
-              Cancel
-            </button>
-            <button
-              class="border border-black bg-black text-white py-2 px-4 rounded-lg"
-            >
-              Save Bookmark
-            </button>
-          </div>
-        </div>
-      </dialog>
+        </dialog>
+      </div>
     </div>
 
     <script defer src="./js/db.js"></script>
