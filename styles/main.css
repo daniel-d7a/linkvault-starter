@@ -1,5 +1,18 @@
 /* Custom styles & utilities beyond Tailwind CDN */
 
 html {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.content {
+  width: 80%;
+  padding-inline: 10px;
 }
