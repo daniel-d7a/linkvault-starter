@@ -47,6 +47,7 @@ function renderData(datatoRender) {
               </span>
               <!-- end of Logic favourite icon -->
               <span
+                onclick="my_modal_edit.showModal()"
                 class="text-[#90A1B9] cursor-pointer w-[28px] text-center rounded-[6px]"
                 ><i class="fa-solid fa-pen"></i
               ></span>
